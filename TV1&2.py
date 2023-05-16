@@ -107,3 +107,8 @@ class TV:
 # Create TV1 frame
         tv1_frame = tk.Frame(root)
         tv1_frame.pack(side="left", padx=20)
+
+# Create TV1 channel label
+        self.tv1_channel_label = tk.Label(tv1_frame, text=f"Tv1's channel is {self.tv1.getChannel()}",font=("Times new roman", 18))
+        self.tv1_channel_label.pack()
+
