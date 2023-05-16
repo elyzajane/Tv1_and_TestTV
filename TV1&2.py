@@ -48,7 +48,19 @@ class TV:
         if self.on and self.volumeLevel > 1:
             self.volumeLevel -= 1
 
-    # Adjust channel and volume
+# Create tv object 1 and 2, turn on, set channel and set volume
+    def __init__(self):
+        self.tv1 = TV()
+        self.tv2 = TV()
+        self.tv1.turnOn()
+        self.tv2.turnOn()
+        self.tv1.setChannel(30)
+        self.tv1.setVolume(3)
+        self.tv2.setChannel(3)
+        self.tv2.setVolume(2)
+        self.create_ui()
+
+# Adjust channel and volume
     def channel_up_tv1(self):
         self.tv1.channelUp()
         self.update_labels()
