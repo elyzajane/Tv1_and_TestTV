@@ -155,6 +155,23 @@ class TestTV:
         tv2_controls_frame = tk.Frame(tv2_frame)
         tv2_controls_frame.pack(pady=20)
 
+# Create TV2 control buttons
+        tv2_channel_up_button = tk.Button(tv2_controls_frame, text="Channel Up", command=self.channel_up_tv2,
+                                      font=("Arial", 12), bg="orchid", fg="black")
+        tv2_channel_up_button.pack(side="left")
+
+        tv2_channel_down_button = tk.Button(tv2_controls_frame, text="Channel Down", command=self.channel_down_tv2,
+                                        font=("Arial", 12), bg="orchid", fg="black")
+        tv2_channel_down_button.pack(side="left", padx=10)
+
+        tv2_volume_up_buttons = tk.Button(tv2_controls_frame, text="Volume Up", command=self.volume_up_tv2,
+                                     font=("Arial", 12), bg="navajo white", fg="black")
+        tv2_volume_up_button.pack(side="left")
+
+        tv2_volume_down_button = tk.Button(tv2_controls_frame, text="Volume Down", command=self.volume_down_tv2,
+                                       font=("Arial", 12), bg="navajo white", fg="black")
+        tv2_volume_down_button.pack(side="left", padx=10)
+
 # Run the program
         root.mainloop()
 test = TestTV()
