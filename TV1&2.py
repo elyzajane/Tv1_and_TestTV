@@ -115,3 +115,15 @@ class TV:
 # Create TV1 volume label
         self.tv1_volume_label = tk.Label(tv1_frame, text=f"Volume level is {self.tv1.getVolume()}",font=("Times new roman", 18))
         self.tv1_volume_label.pack()
+
+# Create TV1 controls frame
+        tv1_controls_frame = tk.Frame(tv1_frame)
+        tv1_controls_frame.pack(pady=20)
+        
+# Create TV2 frame
+        tv2_frame = tk.Frame(root)
+        tv2_frame.pack(side="right", padx=20)
+
+# Create TV2 channel label
+        self.tv2_channel_label = tk.Label(tv2_frame, text=f"Tv2's channel is {self.tv2.getChannel()}",font=("Times new roman", 18))
+        self.tv2_channel_label.pack()
