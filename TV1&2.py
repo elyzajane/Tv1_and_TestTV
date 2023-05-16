@@ -49,7 +49,8 @@ class TV:
             self.volumeLevel -= 1
 
 # Create tv object 1 and 2, turn on, set channel and set volume
-    def __init__(self):
+class TestTV:
+        def __init__(self):
         self.tv1 = TV()
         self.tv2 = TV()
         self.tv1.turnOn()
@@ -136,3 +137,7 @@ class TV:
 # Create TV2 controls frame
         tv2_controls_frame = tk.Frame(tv2_frame)
         tv2_controls_frame.pack(pady=20)
+
+# Run the program
+        root.mainloop()
+test = TestTV()
