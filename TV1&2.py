@@ -103,3 +103,7 @@ class TV:
         root = tk.Tk()
         root.title("TV Simulator")
         root.geometry("1200x600")
+
+# Create TV1 frame
+        tv1_frame = tk.Frame(root)
+        tv1_frame.pack(side="left", padx=20)
