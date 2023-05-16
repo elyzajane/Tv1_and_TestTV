@@ -26,3 +26,15 @@ class TV:
 
     def getVolume(self):
         return self.volumeLevel
+    
+# Set the channel up and down by 1, set maximum and maximum
+    def channelUp(self):
+        if self.on and self.channel < 120:
+            self.channel += 1
+
+    def channelDown(self):
+        if self.on and self.channel > 1:
+            self.channel -= 1
+            
+# Set the volume up and down by 1, set maximum and maximum
+
