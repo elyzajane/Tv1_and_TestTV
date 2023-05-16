@@ -1,4 +1,5 @@
 # Elyza Jane G. Relucio
+# BSCPE 1-4
 #A Python code for creating the class named TV and a test driver program named TestTV
 
 # Import the tkinter library for GUI
