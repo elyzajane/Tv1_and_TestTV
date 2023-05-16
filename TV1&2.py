@@ -45,3 +45,35 @@ class TV:
         if self.on and self.volumeLevel > 1:
             self.volumeLevel -= 1
 
+    # Adjust channel and volume
+    def channel_up_tv1(self):
+        self.tv1.channelUp()
+        self.update_labels()
+
+    def channel_down_tv1(self):
+        self.tv1.channelDown()
+        self.update_labels()
+
+    def volume_up_tv1(self):
+        self.tv1.volumeUp()
+        self.update_labels()
+
+    def volume_down_tv1(self):
+        self.tv1.volumeDown()
+        self.update_labels()
+
+    def channel_up_tv2(self):
+        self.tv2.channelUp()
+        self.update_labels()
+
+    def channel_down_tv2(self):
+        self.tv2.channelDown()
+        self.update_labels()
+
+    def volume_up_tv2(self):
+        self.tv2.volumeUp()
+        self.update_labels()
+
+    def volume_down_tv2(self):
+        self.tv2.volumeDown()
+        self.update_labels()
