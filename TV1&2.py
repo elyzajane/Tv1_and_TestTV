@@ -50,7 +50,7 @@ class TV:
 
 # Create tv object 1 and 2, turn on, set channel and set volume
 class TestTV:
-        def __init__(self):
+    def __init__(self):
         self.tv1 = TV()
         self.tv2 = TV()
         self.tv1.turnOn()
@@ -121,6 +121,23 @@ class TestTV:
         tv1_controls_frame = tk.Frame(tv1_frame)
         tv1_controls_frame.pack(pady=20)
         
+# Create TV1 control buttons
+        tv1_channel_up_button = tk.Button(tv1_controls_frame, text="Channel Up", command=self.channel_up_tv1,
+                                      font=("Arial", 12), bg="sky blue", fg="black")
+        tv1_channel_up_button.pack(side="left")
+
+        tv1_channel_down_button = tk.Button(tv1_controls_frame, text="Channel Down", command=self.channel_down_tv1,
+                                        font=("Arial", 12), bg="sky blue", fg="black")
+        tv1_channel_down_button.pack(side="left", padx=10)
+
+        tv1_volume_up_button = tk.Button(tv1_controls_frame, text="Volume Up", command=self.volume_up_tv1,
+                                     font=("Arial", 12), bg="pink", fg="black")
+        tv1_volume_up_button.pack(side="left")
+
+        tv1_volume_down_button = tk.Button(tv1_controls_frame, text="Volume Down", command=self.volume_down_tv1,
+                                       font=("Arial", 12), bg="pink", fg="black")
+        tv1_volume_down_button.pack(side="left", padx=10)
+
 # Create TV2 frame
         tv2_frame = tk.Frame(root)
         tv2_frame.pack(side="right", padx=20)
