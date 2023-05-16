@@ -1,3 +1,6 @@
+# Import the tkinter library for GUI
+import tkinter as tk
+
 class TV:
 # Use def function to initialize the channel and volume
     def __init__(self):
