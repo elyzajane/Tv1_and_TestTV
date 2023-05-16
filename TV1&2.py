@@ -80,3 +80,14 @@ class TV:
     def volume_down_tv2(self):
         self.tv2.volumeDown()
         self.update_labels()
+
+    def update_labels(self):
+        self.tv1_channel_label.config(text=f"tv1's channel is {self.tv1.getChannel()}")
+        self.tv1_volume_label.config(text=f"Volume level is {self.tv1.getVolume()}")
+        self.tv2_channel_label.config(text=f"tv2's channel is {self.tv2.getChannel()}")
+        self.tv2_volume_label.config(text=f"Volume level is {self.tv2.getVolume()}")
+
+    def create_ui(self):
+        root = tk.Tk()
+        root.title("TV Simulator")
+        root.geometry("1200x600")
