@@ -11,25 +11,45 @@ The TV Simulator program is a graphical user interface (GUI) application that si
 
 ## Functionalities
 TV Class:
+
 turnOn(): Turns on the TV.
+
 turnOff(): Turns off the TV.
+
 setChannel(channel): Sets the channel of the TV.
+
 getChannel(): Returns the current channel of the TV.
+
 setVolume(volumeLevel): Sets the volume level of the TV.
+
 getVolume(): Returns the current volume level of the TV.
+
 channelUp(): Increases the channel by one.
+
 channelDown(): Decreases the channel by one.
+
 volumeUp(): Increases the volume level by one.
+
 volumeDown(): Decreases the volume level by one.
+
 TestTV Class:
+
 Initializes two TV objects (tv1 and tv2).
+
 Sets initial values for channel and volume for both TVs.
+
 Creates a GUI to display the TV controls and current channel/volume information.
+
 Defines methods to handle button presses for controlling the TVs:
+
 channel_up_tv1(), channel_down_tv1(), volume_up_tv1(), volume_down_tv1(): Control TV 1.
+
 channel_up_tv2(), channel_down_tv2(), volume_up_tv2(), volume_down_tv2(): Control TV 2.
+
 update_labels(): Updates the channel and volume labels on the GUI.
+
 create_ui(): Creates the graphical user interface using tkinter.
+
 Instantiates the TestTV class to run the program.
 
 ## General info
