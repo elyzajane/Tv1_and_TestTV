@@ -1,5 +1,5 @@
 class TV:
-    # Use def function to initialize the channel and volume
+# Use def function to initialize the channel and volume
     def __init__(self):
         self.channel = 1
         self.volumeLevel = 1
@@ -18,4 +18,11 @@ class TV:
 
     def getChannel(self):
         return self.channel
+    
 # Set the volume of the channel
+    def setVolume(self, volumeLevel):
+        if self.on and 1 <= volumeLevel <= 7:
+            self.volumeLevel = volumeLevel
+
+    def getVolume(self):
+        return self.volumeLevel
