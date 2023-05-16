@@ -112,3 +112,6 @@ class TV:
         self.tv1_channel_label = tk.Label(tv1_frame, text=f"Tv1's channel is {self.tv1.getChannel()}",font=("Times new roman", 18))
         self.tv1_channel_label.pack()
 
+# Create TV1 volume label
+        self.tv1_volume_label = tk.Label(tv1_frame, text=f"Volume level is {self.tv1.getVolume()}",font=("Times new roman", 18))
+        self.tv1_volume_label.pack()
